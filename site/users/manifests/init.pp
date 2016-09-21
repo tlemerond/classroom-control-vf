@@ -3,7 +3,7 @@ class users {
        ensure => present,
        allowdupe => false,
        username => "fundamentals",
-       gid = 100 ,
-       uid = 5000
+       gid = '100',
+       uid = '5000'
        }
 }
