@@ -50,8 +50,8 @@ node default {
 #       mode => "644" 
        }
   exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd" :
-        creates => /etc/motd,
-        path => /usr/local/bin/
+        creates => "/etc/motd",
+        path => "/usr/local/bin/"
         }
 }
   
