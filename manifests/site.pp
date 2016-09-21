@@ -46,8 +46,8 @@ node default {
   file { '/etc/motd':
        ensure => file,
        content => "learning stuff in puppet\n", 
-       owner => root, 
-       mode => 644 
+       owner => "root", 
+       mode => "644" 
        }
 }
   
