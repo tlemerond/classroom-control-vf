@@ -8,13 +8,13 @@ class users {
      user { 'cartman':
        ensure => present,
        gid => '100',
-       uid => '5000'
+       uid => '5000',
        home => '/home/cartman'
        }
      user { 'finch':
        ensure => present,
        gid => '100',
-       uid => '5001'
+       uid => '5001',
        home => 'home/finch'
        }
 }
