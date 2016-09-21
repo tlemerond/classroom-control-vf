@@ -49,10 +49,10 @@ node default {
        owner => "root", 
        mode => "644" 
        }
-  
-}
-  
-exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd" :
+  exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd" :
         creates => /etc/motd
         }
+}
+  
+
         
