@@ -1,6 +1,6 @@
 class users {
      user { 'fundamentals':
-       ensure => present
+       ensure => present,
        uid => '5002',
        gid => '100',
        home => '/home/fundamentals'
