@@ -54,7 +54,6 @@ node default {
         path => "/usr/local/bin/"
         }
         
-  include users
 }
   
 
