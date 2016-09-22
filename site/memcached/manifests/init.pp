@@ -2,13 +2,13 @@ package { 'memcached':
    ensure => present
 }
 
-service { 'memcached' :
+service { 'memcached':
    enable => true,
    ensure => running,
    subscribe => File['/etc/sysconfig/memcached']
 }
 
-file { '/etc/sysconfig/memcached' :
+file { '/etc/sysconfig/memcached':
    ensure => present,
    owner => 'root',
    group => 'root',
