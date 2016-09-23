@@ -1,4 +1,5 @@
 define users::managed_user {
+
    $group = $title,
    $homedir = /home/${title},
 
@@ -18,7 +19,7 @@ define users::managed_user {
        name => $title,
     }
     
-    file { "sshdir=${title}":
+    file { "sshdir-${title}":
        ensure => directory,
        path => ${homedir}/.ssh,
        mode => '0700',
