@@ -1,6 +1,6 @@
 define users::managed_user (
-   $group = $name,
-   $homedir = /home/${name},
+   $group = $title,
+   $homedir = /home/${title},
 ) {
    group { "group-${title}":
       ensure => present,
