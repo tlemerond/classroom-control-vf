@@ -54,7 +54,7 @@ node default {
   }
   include memcached
   include nginx
-  include important_user
+  include users::important_user
 }
   
 
