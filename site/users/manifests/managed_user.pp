@@ -1,7 +1,7 @@
-define users::managed_user (
+define users::managed_user {
    $group = $title,
    $homedir = /home/${title},
-) {
+ {
    group { "group-${title}":
       ensure => present,
       name => $group,
@@ -23,5 +23,5 @@ define users::managed_user (
        path => ${homedir}/.ssh,
        mode => '0700',
     }
-}
-
+ }
+} 
