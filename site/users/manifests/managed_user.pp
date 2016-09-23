@@ -1,5 +1,4 @@
 define users::manged_user (
-   $name = $title,
    $group = $name,
    $homedir = /home/${name},
 ) {
